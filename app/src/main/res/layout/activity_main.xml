@@ -6,13 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- Calorie input field -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Calories"
+    android:textSize="18sp"
+    android:textColor="@color/black"/>
+
+<EditText
+    android:id="@+id/calorieEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"/>
+
+<!-- Protein input field -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Protein (g)"
+    android:textSize="18sp"
+    android:textColor="@color/black"/>
+
+<EditText
+    android:id="@+id/proteinEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"/>
+
+<!-- Carbohydrate input field -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Carbohydrates (g)"
+    android:textSize="18sp"
+    android:textColor="@color/black"/>
+
+<EditText
+    android:id="@+id/carbEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"/>
+
+<!-- Fat input field -->
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Fat (g)"
+    android:textSize="18sp"
+    android:textColor="@color/black"/>
+
+<EditText
+    android:id="@+id/fatEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"/>
+
+<!-- Submit button -->
+<Button
+    android:id="@+id/submitButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:textSize="18sp"
+    android:textColor="@color/white"
+    android:background="@color/blue"/>
+
+</LinearLayout>
