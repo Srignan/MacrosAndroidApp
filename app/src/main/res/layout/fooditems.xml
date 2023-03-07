@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Input fields for food item information -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"/>
+
+    <EditText
+        android:id="@+id/foodNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"/>
+
+    <EditText
+        android:id="@+id/caloriesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"/>
+
+    <EditText
+        android:id="@+id/proteinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrates"/>
+
+    <EditText
+        android:id="@+id/carbsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fats"/>
+
+    <EditText
+        android:id="@+id/fatsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"/>
+
+    <!-- Button to add food item -->
+    <Button
+        android:id="@+id/addFoodItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Add Food Item"/>
+
+    <!-- RecyclerView to display daily log -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodItemView"
+        android:layout_width="match_parent"
+        android:layout_height="301dp" />
+
+</LinearLayout>
